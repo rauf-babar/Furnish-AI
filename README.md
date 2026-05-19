@@ -58,6 +58,22 @@ Furnish.AI improves this by fine-tuning Stable Diffusion XL on interior scene da
 
 ---
 
+## Website / Output Demo Flow
+
+The website flow is designed to be simple:
+
+1. Upload a room image.
+2. Upload furniture reference image(s).
+3. Enter a prompt describing the target room design.
+4. Generate the furnished room.
+5. Compare the original room with the generated output.
+
+[▶ Watch Furnish.AI Demo](./Assets/furnish-ai-demo.mp4)
+
+https://github.com/user-attachments/assets/1533ade7-e557-4935-bfbc-36d8e1dbd866
+
+--- 
+
 ## Key Features
 
 - Interior-specialized image generation using SDXL fine-tuning
@@ -284,6 +300,8 @@ convert_lora.py
 ```
 Converts saved PyTorch LoRA checkpoints into Diffusers-compatible `.safetensors` format.
 
+---
+
 ### Output Artifacts
 
 ```txt
@@ -318,18 +336,6 @@ generate a room with windows, bed and a table
 ```
 
 The base SDXL output failed to properly include the table, while the LoRA fine-tuned output generated a clearer table and a more coherent bed structure.
-
----
-
-## Website / Output Demo Flow
-
-The website flow is designed to be simple:
-
-1. Upload a room image.
-2. Upload furniture reference image(s).
-3. Enter a prompt describing the target room design.
-4. Generate the furnished room.
-5. Compare the original room with the generated output.
 
 ---
 
